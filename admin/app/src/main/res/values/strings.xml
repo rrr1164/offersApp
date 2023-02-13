@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Omniaoffers</string>
+    <string name="offer_image">offer_image</string>
+    <string name="title">Offer Title *</string>
+    <string name="select">Select Category *</string>
+    <string name="offer_description">Offer Description</string>
+    <string name="add_offer">add offer</string>
+    <string name="categories">categories</string>
+
+    <string name="post_notification">Post notification</string>
+    <string name="dialog_delete_item">delete item?</string>
+    <string name="delete">delete</string>
+    <string name="offers">offers</string>
+    <string name="coupons">coupons</string>
+    <string name="coupon_title">coupon title*</string>
+    <string name="coupon_description">coupon description</string>
+    <string name="add_coupon">add coupon</string>
+</resources>

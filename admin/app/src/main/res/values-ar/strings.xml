@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">صفحة الأدمن</string>
+    <string name="offer_image">صورة العرض</string>
+    <string name="title">العنوان*</string>
+    <string name="select">التصنيف *</string>
+    <string name="offer_description">الوصف</string>
+    <string name="add_offer">اضافة العرض</string>
+    <string name="categories">تصانيف</string>
+
+    <string name="post_notification">ارسال اشعار</string>
+    <string name="dialog_delete_item">مسح العرض؟</string>
+    <string name="delete">المسح</string>
+    <string name="offers">العروض</string>
+    <string name="coupons">الكوبونات</string>
+    <string name="coupon_title">عنوان الكوبون*</string>
+    <string name="coupon_description">وصف الكوبون</string>
+    <string name="add_coupon">أضافة الكوبون</string>
+</resources>
