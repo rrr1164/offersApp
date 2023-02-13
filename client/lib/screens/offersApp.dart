@@ -32,11 +32,6 @@ class _OffersApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          colorScheme: ColorScheme.fromSwatch().copyWith(
-        primary: const Color(0xFFf9bc30),
-        secondary: const Color(0xFFFFC107),
-      )),
       home: Directionality(
         textDirection: TextDirection.rtl,
         child: Scaffold(
@@ -133,9 +128,10 @@ class _OffersApp extends StatelessWidget {
                                       .offers[index]
                                       .description,
                                   false),
+
                               style: ButtonStyle(
                                   backgroundColor:
-                                      MaterialStateProperty.all(Colors.white)),
+                                      MaterialStateProperty.all(Colors.black.withOpacity(0.0)),elevation: MaterialStateProperty.all(0.0)),
                               child: OfferCard(
                                   BlocProvider.of<OfferCubit>(context)
                                       .offers[index]));

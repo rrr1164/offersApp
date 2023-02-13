@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
-
-class Filter{
+class Filter {
   final String icon;
   final String filter;
 

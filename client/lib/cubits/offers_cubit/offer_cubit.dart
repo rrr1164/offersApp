@@ -23,6 +23,7 @@ class OfferCubit extends Cubit<OfferState> {
   }
 
   searchInData(String query, String type) {
+    emit(OfferSearchSearching());
     offers.clear();
     for (var offer in _alloffers) {
       if (type == "title") {

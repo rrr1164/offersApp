@@ -24,22 +24,6 @@ class CouponRepository extends GetxController {
     });
   }
 
-  Future<bool> _upload_image(File image, Coupon coupon) async {
-    bool uploaded = false;
-    final storageRef = FirebaseStorage.instance.ref();
-    final offersRef = storageRef.child("offers/" + coupon.id + ".jpg");
-    UploadTask uploadTask = offersRef.putFile(image);
-    await uploadTask.whenComplete(() async {
-      try {
-        coupon.pictureUrl = await offersRef.getDownloadURL();
-        uploaded = true;
-      } catch (onError) {
-        print("Error uploading image ");
-      }
-    });
-    return uploaded;
-  }
-
   List<Coupon> getCoupons() {
     return _coupons;
   }

@@ -67,6 +67,7 @@ showAlertDialog(BuildContext context, String description, bool coupon) {
     },
   );
 }
+
 translate_category(String category){
   if(category.toLowerCase() == "All".toLowerCase()){
     return "الكل";
@@ -94,6 +95,7 @@ translate_category(String category){
   }
 
 }
+
 subscribe_to_notifications() async {
   FirebaseMessaging messaging = FirebaseMessaging.instance;
   await messaging.subscribeToTopic("all");

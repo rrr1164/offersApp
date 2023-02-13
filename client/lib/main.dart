@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:omnia_client/cubits/init_cubit/init_state.dart';
 import 'package:omnia_client/cubits/screens_cubit/screen_cubit.dart';
+import 'package:omnia_client/screens/splash_screen.dart';
 
 import 'cubits/init_cubit/init_cubit.dart';
 import 'cubits/screens_cubit/screen_state.dart';
@@ -27,9 +28,7 @@ class MainApp extends StatelessWidget {
         child: BlocBuilder<InitCubit, InitiationState>(
             builder: (BuildContext context, state) {
           if (state is InitiationLoading) {
-            return const Center(
-              child: CircularProgressIndicator(),
-            );
+            return  SplashScreen();
           } else if (state is InitiationError) {
             return const Center(child: Text("an Error occured initiation app"));
           } else {

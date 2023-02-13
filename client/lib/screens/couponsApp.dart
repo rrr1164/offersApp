@@ -135,7 +135,7 @@ class _CouponsApp extends StatelessWidget {
                                   false),
                               style: ButtonStyle(
                                   backgroundColor:
-                                      MaterialStateProperty.all(Colors.white)),
+                                  MaterialStateProperty.all(Colors.black.withOpacity(0.0)),elevation: MaterialStateProperty.all(0.0)),
                               child: CouponCard(
                                   BlocProvider.of<CouponCubit>(context)
                                       .coupons[index]));
